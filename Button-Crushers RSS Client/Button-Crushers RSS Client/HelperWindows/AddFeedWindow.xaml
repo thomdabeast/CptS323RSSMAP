@@ -1,0 +1,22 @@
+﻿<Window x:Class="Button_Crushers_RSS_Client.HelperWindows.AddFeedWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="Add Feed" Height="103" Width="302.315" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" WindowStyle="ToolWindow">
+    <Grid>
+        <DockPanel>
+            <StackPanel DockPanel.Dock="Top" Margin="0 3" Orientation="Horizontal" Height="30">
+                <Label x:FieldModifier="private" x:Name="NameLabel" Content="Name" VerticalAlignment="Center"/>
+                <TextBox x:FieldModifier="private" x:Name="NameTextBox" Width="159" Height="20" Loaded="NameTextBox_Loaded"/>
+            </StackPanel>
+            <StackPanel DockPanel.Dock="Bottom" Margin=" 0 3 3 0" VerticalAlignment="Bottom" Orientation="Horizontal" Height="30">
+                <Label x:FieldModifier="private" x:Name="UrlLabel" Content="URL:" VerticalAlignment="Center"/>
+                <TextBox x:FieldModifier="private" x:Name="urlTextBox" Width="170" Margin="0 5 0 5" VerticalAlignment="Center" />
+                <Button x:FieldModifier="private" x:Name="AddButton" Content="Add" Margin="5 5 0 5" HorizontalAlignment="Right" Click="Add_Click" Background="#FFDDDDDD"/>
+                <Button x:FieldModifier="private" x:Name="CancelButton" Content="Cancel" Margin="5 5 0 5" HorizontalAlignment="Right" Click="Cancel_Click"/>
+            </StackPanel>
+        </DockPanel>
+    </Grid>
+</Window>
